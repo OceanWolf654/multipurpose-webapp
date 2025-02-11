@@ -59,7 +59,7 @@ function generateQR() {
 // ================= Fetch Python Backend - YouTube MP3 =================
 async function downloadAudio() {
     let url = document.getElementById("videoUrl").value;
-    let response = await fetch("https://your-backend-url.com/download", {
+    let response = await fetch("https://multipurpose-backend-54q4.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: url })
@@ -71,7 +71,7 @@ async function downloadAudio() {
 // ================= Fetch Python Backend - Weather =================
 async function checkWeather() {
     let city = document.getElementById("weatherInput").value;
-    let response = await fetch("https://your-backend-url.com/weather", {
+    let response = await fetch("https://multipurpose-backend-54q4.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ city: city })
